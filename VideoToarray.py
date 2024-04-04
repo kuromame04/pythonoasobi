@@ -30,13 +30,14 @@ if res ==False:
     print("FFmpegERROR")
     sys.exit(0)
 
+terminal_size = shutil.get_terminal_size()
         
 array=cv2.VideoCapture(f"{path}.mp4")
 fps=array.get(cv2.CAP_PROP_FPS)
 framearray=[]
 frame_spilit=2
-x_split=32
-y_split=32
+x_split=array.get(cv2.CAP_PROP_FRAME_WIDTH)//terminal_size.columns
+y_split=array.get(cv2.CAP_PROP_FRAME_HEIGHT)//terminal_size.lines-1
 
 if  array.isOpened():
     frame_count=0
