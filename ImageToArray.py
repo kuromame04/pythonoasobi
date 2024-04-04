@@ -27,7 +27,7 @@ if  array.isOpened():
                     for r,datax in enumerate(data):
                         if r %x_split==0:
                             R,G,B=frame[i][r]
-                            if R >=128 or G >=128 or B >=128:
+                            if R >=127 or G >=127 or B >=127:
                                 frame[i][r]=[0,0,0]
                                 pixelarray.append(frame[i][r])
                             elif R <=128 or G <=128 or B <=128:
