@@ -11,7 +11,7 @@ import aiohttp
 import ast
 import time
 from bs4 import BeautifulSoup
-
+# 昔書いたこーどだからあんまり見ないでほしいな
 TOKEN="MTE1MDc5MDI3NTcxMTYzMTQ5Mg.GqppS5.xinOuemeOFiLw1_rYxKMpR_XWpSZogB_PrUXcA"
 client=discord.Client(intents=discord.Intents.all())
 cmd=discord.app_commands.CommandTree(client)
