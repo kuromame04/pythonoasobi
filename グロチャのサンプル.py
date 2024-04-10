@@ -16,7 +16,7 @@ TOKEN="MTE1MDc5MDI3NTcxMTYzMTQ5Mg.GqppS5.xinOuemeOFiLw1_rYxKMpR_XWpSZogB_PrUXcA"
 client=discord.Client(intents=discord.Intents.all())
 cmd=discord.app_commands.CommandTree(client)
 # 今度作る翻訳機能にいる奴
-API_KEY="e00e4bf9-a28a-5e60-25d8-3ef004714fcb:fx"
+API_KEY=""
 
 channelid={}
 banlist=[]
